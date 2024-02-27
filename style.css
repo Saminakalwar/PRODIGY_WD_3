@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    font-family: "Raleway", sans-serif;
+}
+
+body{
+    height: 100vh;
+    /* background-color: #D87CAC; */
+    background-color: #F26CA7;
+    /* background-color: black; */
+    text-align: center;
+}
+
+h1 {
+  
+    font-size: 2.5em; /* Adjust the font size as desired */
+    color: white; /* Text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Text shadow */
+    margin-bottom: 20px; /* Bottom margin */
+  }
+
+.container {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+
+    /* an absolutely positioned element can be moved using
+     top, bottom, left, and right properties to specify its distance from the edges of its containing block. */
+
+}
+/* this above css rule with all four properties would center the .container within its containing element both horizontally and vertically. */
+
+.game {
+
+height: 60vmin;
+width: 60vmin;
+/* to,put content at center within game */
+justify-content: center;
+align-items: center;
+gap: 0.5rem;
+display: flex;
+flex-wrap: wrap;
+
+}
+
+.box{
+height: 18vmin;
+width: 18vmin;
+border-radius: 1rem;
+border: none;
+text-align: center;
+font-size: 8vmin;
+color:black;
+box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+/* background-color: #F9B9C3; */
+background-color: #F0A7A0;
+
+}
+
+#reset-btn{
+    font-size: 1.3em;
+    padding: 1em;
+    border-radius: 8px;
+    background-color: #05299E;
+    color: #ffffff;
+    border: none;
+    position: relative;
+    margin: 1.5em auto 0 auto;
+    display: block;
+}
+
+#new-btn {
+    margin-top: 5px;
+    font-size: 0.6em;
+    font-weight: 550;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    /* font-family:"Sacramento" ; */
+    padding: 0.5em 1em;
+    background-color: #F26CA7;
+    color: #ffffff;
+    border-radius: 0.2em;
+    border: none;
+  }
+
+.pop-up {
+    background: linear-gradient(135deg, #8052ec, #d161ff);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    z-index: 2;
+    /* elament pop-up  will be stacked visually on top of other elements because it has a higher z-index value. */
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
+    font-size: 12vmin;
+  }
+
+ 
+  #msg {
+    color: #ffffff;
+    text-align: center;
+    font-size: 50px;
+    font-family:"Sacramento" ;
+    /* "Lobster," "Great Vibes," or "Sacramento." */
+    font-weight: 700;
+  }
+  .pop-up.hide {
+    display: none;
+  }
+
+
+
+                                                            /* understandings */
+
+  /* Without box-sizing: border-box; */
+
+/* .element {
+    width: 200px;
+    padding: 20px;
+    border: 2px solid black;
+  } */
+
+  /* In this example, the total width of the .element would be 200px (width) + 40px (padding) + 4px (border) = 244px. */
+
+  /* With box-sizing: border-box; */
+/* .element {
+    width: 200px;
+    padding: 20px;
+    border: 2px solid black;
+    box-sizing: border-box;
+  } */
+  
+  /* In this example, the total width of the .element would remain 200px, and the padding and border would be included within that width */
